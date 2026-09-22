@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Dalamud.NET.Sdk/15.0.0">
+  <PropertyGroup>
+    <Version>1.0.0.0</Version>
+    <Author>YozoraCho</Author>
+    <Name>Placard</Name>
+    <Punchline>Open housing plots on the real district maps, with lottery tracking.</Punchline>
+    <Description>Placard shows every open housing plot on the in-game district maps for Mist, The Lavender Beds, The Goblet, Shirogane and Empyreum, on any world.
+
+Switch between the district map and a list of every open plot across the whole world at once. Markers carry size, lottery phase, price and eligibility. Filter by size, phase, eligibility, division and entry count, sort by fewest entries or scan age, keep a watchlist, and get reminded before a lottery phase closes.</Description>
+    <RepoUrl>https://github.com/YozoraCho/Placard</RepoUrl>
+    <Tags>housing;plot;lottery;ward;map</Tags>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <LangVersion>preview</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Using Include="System" />
+    <Using Include="System.Collections.Generic" />
+    <Using Include="System.Numerics" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Localization\*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

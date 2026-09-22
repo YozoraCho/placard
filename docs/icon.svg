@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="title">
+  <title id="title">Placard</title>
+
+  <!-- Geometry is HousingGlyphs.Estate plotted at centre (256, 266) with radius 150.
+       Colours are PlacardTheme.Surface (#161615) and PlacardTheme.Accent (#C19135). -->
+
+  <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="#161615"/>
+  <rect x="1.5" y="1.5" width="509" height="509" rx="94.5" ry="94.5"
+        fill="none" stroke="#ffffff" stroke-opacity="0.17" stroke-width="3"/>
+
+  <g fill="#C19135">
+    <path d="M 256 116 L 406 254 L 106 254 Z"/>
+    <rect x="151" y="248" width="210" height="147" rx="24" ry="24"/>
+  </g>
+
+  <rect x="223" y="302" width="66" height="93" rx="15" ry="15" fill="#161615"/>
+</svg>
