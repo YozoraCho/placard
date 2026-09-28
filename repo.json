@@ -3,7 +3,8 @@
     "Author": "YozoraCho",
     "Name": "Placard",
     "InternalName": "Placard",
-    "AssemblyVersion": "1.0.0.0",
+    "AssemblyVersion": "1.1.0.0",
+    "Changelog": "Aethernet shards and market boards now appear on the district maps.",
     "Description": "Placard shows every open housing plot on the in-game district maps for Mist, The Lavender Beds, The Goblet, Shirogane and Empyreum, on any world.\n\nSwitch between the district map and a list of every open plot across the whole world at once. Markers carry size, lottery phase, price and eligibility. Filter by size, phase, eligibility, division and entry count, sort by fewest entries or scan age, keep a watchlist, and get reminded before a lottery phase closes.",
     "Punchline": "Open housing plots on the real district maps, with lottery tracking.",
     "ApplicableVersion": "any",
@@ -25,9 +26,9 @@
       "https://raw.githubusercontent.com/YozoraCho/Placard/master/docs/map.png",
       "https://raw.githubusercontent.com/YozoraCho/Placard/master/docs/list.png"
     ],
-    "DownloadLinkInstall": "https://github.com/YozoraCho/Placard/releases/download/v1.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/YozoraCho/Placard/releases/download/v1.0.0.0/latest.zip",
-    "DownloadLinkTesting": "https://github.com/YozoraCho/Placard/releases/download/v1.0.0.0/latest.zip",
+    "DownloadLinkInstall": "https://github.com/YozoraCho/Placard/releases/download/v1.1.0.0/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/YozoraCho/Placard/releases/download/v1.1.0.0/latest.zip",
+    "DownloadLinkTesting": "https://github.com/YozoraCho/Placard/releases/download/v1.1.0.0/latest.zip",
     "AcceptsFeedback": true
   }
 ]
