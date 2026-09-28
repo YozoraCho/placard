@@ -431,6 +431,7 @@ internal sealed partial class HousingApp
         var origin = MapOrigin(viewport, mapSize);
         drawList.PushClipRect(viewport.Min, viewport.Max, true);
         DrawPlan(drawList, plan, origin, mapSize, scale);
+        DrawPointsOfInterest(drawList, plan, origin, mapSize, viewport, scale);
         DrawMarkers(drawList, plan, plots, origin, mapSize, viewport, scale);
         drawList.PopClipRect();
         DrawViewportEdges(drawList, viewport, scale);
@@ -768,6 +769,33 @@ internal sealed partial class HousingApp
         Squircle.Stroke(drawList, min, max, rounding,
             ImGui.GetColorU32(Palette.WithAlpha(PlacardTheme.Brass, 0.34f)), 1.4f * scale);
         return true;
+    }
+
+    private void DrawPointsOfInterest(ImDrawListPtr drawList, in HousingPlan plan, Vector2 origin,
+        float mapSize, Rect viewpoint, float scale)
+    {
+        if (plan.Map is not { } gameMap)
+        {
+            return;
+        }
+
+        var cull = 24f * scale;
+
+        for (var index = 0; index < gameMap.PointsOfInterest.Count; index++)
+        {
+            var poi = gameMap.PointsOfInterest[index];
+            var center = ToScreen(origin, mapSize, poi.NormalizedPosition);
+
+            if (center.X < viewpoint.Min.X - cull ||
+                center.X > viewpoint.Max.X + cull ||
+                center.Y < viewpoint.Min.Y - cull ||
+                center.Y > viewpoint.Max.Y + cull)
+            {
+                continue;
+            }
+
+            HousingPoiMarkers.Draw(drawList, center, poi.IconId, scale);
+        }
     }
 
     private void DrawMarkers(ImDrawListPtr drawList, in HousingPlan plan, List<HousingPlot> plots,
