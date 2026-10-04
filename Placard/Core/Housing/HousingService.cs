@@ -12,7 +12,6 @@ internal sealed class HousingService : IDisposable
 {
     private const long TickIntervalMilliseconds = 5000;
     private const int MaxBackoffMinutes = 30;
-    public const string AppId = "housing";
 
     private readonly HttpService http;
     private readonly Configuration configuration;

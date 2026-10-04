@@ -123,7 +123,6 @@ internal static class L
         public static readonly LocString Unwatch = new("housing.unwatch", "Unwatch");
         public static readonly LocString RemindMe = new("housing.remindMe", "Remind Me");
         public static readonly LocString ReminderSet = new("housing.reminderSet", "Reminder Set");
-        public static readonly LocString ChangeReminder = new("housing.changeReminder", "Change");
         public static readonly LocString CancelReminder = new("housing.cancelReminder", "Cancel reminder");
         public static readonly LocString DetailsAction = new("housing.detailsAction", "Details");
         public static readonly LocString ReminderPrompt =
@@ -176,11 +175,9 @@ internal static class L
         public static readonly LocString SortSize = new("housing.sortSize", "Plot size");
         public static readonly LocString SortPrice = new("housing.sortPrice", "Price");
         public static readonly LocString SortWard = new("housing.sortWard", "Ward and plot");
-        public static readonly LocString SortLabel = new("housing.sortLabel", "Sort");
 
         public static readonly LocString LoadingFirst =
             new("housing.loadingFirst", "Checking residential listings…");
-        public static readonly LocString LoadingRefresh = new("housing.loadingRefresh", "Updating Placard plots…");
         public static readonly LocString NoFilterMatches =
             new("housing.noFilterMatches", "No plots match the current filters.");
         public static readonly LocString NoOpenings =
@@ -252,10 +249,7 @@ internal static class L
         public static readonly LocString ProviderStatus = new("housing.providerStatus", "Provider");
         public static readonly LocString LastRefresh = new("housing.lastRefresh", "Last successful refresh");
         public static readonly LocString OpenPlotsReported = new("housing.openPlotsReported", "Reported openings");
-        public static readonly LocString ApiEndpointLabel = new("housing.apiEndpointLabel", "Endpoint");
         public static readonly LocString ProxyCacheAge = new("housing.proxyCacheAge", "Service cache age");
-        public static readonly LocString ServiceUnavailable = new("housing.serviceUnavailable",
-            "The service could not be reached.");
         public static readonly LocString DataSourceNotice = new("housing.dataSourceNotice",
             "Placard reads its own service, which polls and caches the public PaissaDB API once for all users rather than each client polling it. The PaissaHouse plugin is not required.");
         public static readonly LocString RefreshIntervalHint = new("housing.refreshIntervalHint",

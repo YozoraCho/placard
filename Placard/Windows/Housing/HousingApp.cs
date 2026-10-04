@@ -646,7 +646,7 @@ internal sealed partial class HousingApp
     }
 
     private HousingDataFreshness FreshnessOf(HousingPlot plot) =>
-        housing.Thresholds.Classify(plot.LastSeenUtc, DateTime.UtcNow,
+        housing.Thresholds.ClassifyScan(plot.LastSeenUtc, DateTime.UtcNow,
             housing.ActiveSource);
 
     private bool IsStale(HousingPlot plot) => FreshnessOf(plot) == HousingDataFreshness.Stale;

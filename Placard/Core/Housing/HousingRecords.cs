@@ -86,7 +86,6 @@ internal static class HousingDefaults
     public const int IdleRefreshMinutes = 60;
     public const int ExpiryRefreshMinutes = 5;
     public const int ManualRefreshSeconds = 15;
-    public const uint DefaultWorldId = 0u;
     public const int DefaultWard = 1;
 
     public static readonly int[] ReminderChoices = { 5, 15, 30, 60 };
