@@ -32,9 +32,13 @@ If you have [Lifestream](https://github.com/NightmareXIV/Lifestream) installed, 
 
 ## Installing
 
-Placard is not yet in the official Dalamud repository. Until it is, add it as a custom repository in `/xlsettings` → Experimental.
+Placard is not in the official Dalamud repository. Until it is, install it from a custom repository.
 
-Open it with `/placard`.
+In game, open `/xlsettings` → **Experimental** and paste this into Custom Plugin Repositories:
+
+```
+https://raw.githubusercontent.com/YozoraCho/Placard/refs/heads/master/repo.json
+```
 
 ## Where the data comes from
 
